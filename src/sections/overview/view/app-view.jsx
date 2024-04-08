@@ -7,13 +7,16 @@ import Typography from '@mui/material/Typography';
 import AppNewsUpdate from '../app-news-update';
 import AppOrderTimeline from '../app-order-timeline';
 import AppCurrentVisits from '../app-current-visits';
-import AppWidgetSummary from '../app-widget-summary';
+import AppWidgetSummaryM from '../app-widge-summaryM';
+import AppWidgetSummaryP from '../app_widget_summaryP';
+import AppWidgetSummaryY from '../app_widget_summaryY';
 import AppCurrentSubject from '../app-current-subject';
 import AppConversionRates from '../app-conversion-rates';
 
 // ----------------------------------------------------------------------
 
 export default function AppView() {
+
   return (
     <Container maxWidth="xl">
       <Typography variant="h4" sx={{ mb: 5 }}>
@@ -22,36 +25,36 @@ export default function AppView() {
 
       <Grid container spacing={3}>
         <Grid xs={12} sm={6} md={2.4}>
-          <AppWidgetSummary
+          <AppWidgetSummaryM
             title="초봉"
-            total={714000}
+            total={40000000}
             color="success"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_bag.png" />}
           />
         </Grid>
 
         <Grid xs={12} sm={6} md={2.4}>
-          <AppWidgetSummary
+          <AppWidgetSummaryP
             title="저축률"
-            total={1352831}
+            total={33}
             color="info"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_users.png" />}
           />
         </Grid>
 
         <Grid xs={12} sm={6} md={2.4}>
-          <AppWidgetSummary
+          <AppWidgetSummaryP
             title="투자수익률"
-            total={1723315}
+            total={5.6}
             color="warning"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_buy.png" />}
           />
         </Grid>
 
         <Grid xs={12} sm={6} md={2.4}>
-          <AppWidgetSummary
+          <AppWidgetSummaryY
             title="근무기간"
-            total={1723315}
+            total={30}
             color="warning"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_buy.png" />}
           />
@@ -59,9 +62,9 @@ export default function AppView() {
 
 
         <Grid xs={12} sm={6} md={2.4}>
-          <AppWidgetSummary
+          <AppWidgetSummaryP
             title="국민연금"
-            total={234}
+            total={23.4}
             color="error"
             icon={<img alt="icon" src="/assets/icons/glass/ic_glass_message.png" />}
           />
